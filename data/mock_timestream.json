@@ -1,0 +1,64 @@
+{
+  "readings": [
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T14:00:00Z",
+      "temperature": 22.5,
+      "humidity": 45.2
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T14:30:00Z",
+      "temperature": 23.1,
+      "humidity": 46.0
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T15:00:00Z",
+      "temperature": 23.8,
+      "humidity": 47.5
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T15:30:00Z",
+      "temperature": 24.2,
+      "humidity": 48.1
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T16:00:00Z",
+      "temperature": 24.0,
+      "humidity": 47.8
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T16:30:00Z",
+      "temperature": 23.5,
+      "humidity": 46.9
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "timestamp": "2025-10-27T17:00:00Z",
+      "temperature": 23.0,
+      "humidity": 45.8
+    },
+    {
+      "unit_id": "apt1-5A-001",
+      "timestamp": "2025-10-27T14:00:00Z",
+      "temperature": 21.0,
+      "humidity": 50.0
+    },
+    {
+      "unit_id": "apt1-5A-001",
+      "timestamp": "2025-10-27T15:00:00Z",
+      "temperature": 21.5,
+      "humidity": 51.2
+    },
+    {
+      "unit_id": "apt2-8C-003",
+      "timestamp": "2025-10-27T14:00:00Z",
+      "temperature": 20.5,
+      "humidity": 52.0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "units": [
+    {
+      "unit_id": "apt1-5A-001",
+      "apartment_number": "1",
+      "unit_number": "5A",
+      "floor": 5,
+      "building": "North Tower",
+      "resident_name": "John Smith",
+      "unit_type": "2BHK"
+    },
+    {
+      "unit_id": "apt4-12H-002",
+      "apartment_number": "4",
+      "unit_number": "12H",
+      "floor": 12,
+      "building": "South Tower",
+      "resident_name": "Sarah Johnson",
+      "unit_type": "3BHK"
+    },
+    {
+      "unit_id": "apt2-8C-003",
+      "apartment_number": "2",
+      "unit_number": "8C",
+      "floor": 8,
+      "building": "East Tower",
+      "resident_name": "Mike Davis",
+      "unit_type": "1BHK"
+    },
+    {
+      "unit_id": "apt3-15D-004",
+      "apartment_number": "3",
+      "unit_number": "15D",
+      "floor": 15,
+      "building": "West Tower",
+      "resident_name": "Emily Brown",
+      "unit_type": "2BHK"
+    }
+  ]
+}
