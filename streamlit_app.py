@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Title
-st.title("🌡️ IoT Sensor Data Chatbot")
+st.title("🌡️ Balance AI Chatbot")
 st.markdown("Ask questions about temperature and humidity data from your units.")
 
 # Initialize session state for chat history
@@ -23,6 +23,10 @@ if "messages" not in st.session_state:
 if "agent" not in st.session_state:
     with st.spinner("Initializing agent..."):
         st.session_state.agent = create_agent()
+
+# Initialize conversation history for agent
+if "agent_messages" not in st.session_state:
+    st.session_state.agent_messages = []
 
 # Display chat history
 for message in st.session_state.messages:
@@ -42,18 +46,24 @@ if prompt := st.chat_input("Ask about sensor data..."):
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             try:
-                # Invoke agent
+                # Add user message to agent conversation history
+                st.session_state.agent_messages.append(("user", prompt))
+                
+                # Invoke agent with full conversation history
                 response = st.session_state.agent.invoke({
-                    "messages": [("user", prompt)]
+                    "messages": st.session_state.agent_messages
                 })
                 
                 # Extract assistant's response
                 assistant_message = response["messages"][-1].content
                 
+                # Add assistant response to agent conversation history
+                st.session_state.agent_messages.append(("assistant", assistant_message))
+                
                 # Display response
                 st.markdown(assistant_message)
                 
-                # Add to history
+                # Add to display history
                 st.session_state.messages.append({
                     "role": "assistant",
                     "content": assistant_message
@@ -79,10 +89,20 @@ with st.sidebar:
     
     **Example queries:**
     - "Get temperature stats for unit 12H in apartment 4 on Oct 27 from 2pm to 5pm"
-    - "What's the average temperature in unit 5A?"
+    - "What was the maximum?" (follow-up question)
     - "Show me data for unit 8C"
+    
+    **💡 Now with conversation memory!**
+    Ask follow-up questions and the bot remembers context.
     """)
+    
+    st.divider()
+    
+    # Show conversation stats
+    if st.session_state.agent_messages:
+        st.metric("Conversation turns", len(st.session_state.agent_messages) // 2)
     
     if st.button("Clear Chat History"):
         st.session_state.messages = []
+        st.session_state.agent_messages = []
         st.rerun()
