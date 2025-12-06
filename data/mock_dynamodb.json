@@ -10,16 +10,25 @@
       "unit_type": "2BHK"
     },
     {
-      "unit_id": "apt4-12H-002",
-      "apartment_number": "4",
-      "unit_number": "12H",
-      "floor": 12,
-      "building": "South Tower",
-      "resident_name": "Sarah Johnson",
+      "unit_id": "apt1-7B-002",
+      "apartment_number": "1",
+      "unit_number": "7B",
+      "floor": 7,
+      "building": "North Tower",
+      "resident_name": "Alice Johnson",
       "unit_type": "3BHK"
     },
     {
-      "unit_id": "apt2-8C-003",
+      "unit_id": "apt1-10C-003",
+      "apartment_number": "1",
+      "unit_number": "10C",
+      "floor": 10,
+      "building": "North Tower",
+      "resident_name": "Bob Williams",
+      "unit_type": "2BHK"
+    },
+    {
+      "unit_id": "apt2-8C-004",
       "apartment_number": "2",
       "unit_number": "8C",
       "floor": 8,
@@ -28,13 +37,49 @@
       "unit_type": "1BHK"
     },
     {
-      "unit_id": "apt3-15D-004",
+      "unit_id": "apt2-12D-005",
+      "apartment_number": "2",
+      "unit_number": "12D",
+      "floor": 12,
+      "building": "East Tower",
+      "resident_name": "Sarah Connor",
+      "unit_type": "3BHK"
+    },
+    {
+      "unit_id": "apt3-15D-006",
       "apartment_number": "3",
       "unit_number": "15D",
       "floor": 15,
       "building": "West Tower",
       "resident_name": "Emily Brown",
       "unit_type": "2BHK"
+    },
+    {
+      "unit_id": "apt4-12H-007",
+      "apartment_number": "4",
+      "unit_number": "12H",
+      "floor": 12,
+      "building": "South Tower",
+      "resident_name": "Sarah Johnson",
+      "unit_type": "3BHK"
+    },
+    {
+      "unit_id": "apt4-14J-008",
+      "apartment_number": "4",
+      "unit_number": "14J",
+      "floor": 14,
+      "building": "South Tower",
+      "resident_name": "Tom Harris",
+      "unit_type": "2BHK"
+    },
+    {
+      "unit_id": "apt4-16K-009",
+      "apartment_number": "4",
+      "unit_number": "16K",
+      "floor": 16,
+      "building": "South Tower",
+      "resident_name": "Lisa Anderson",
+      "unit_type": "3BHK"
     }
   ]
 }
