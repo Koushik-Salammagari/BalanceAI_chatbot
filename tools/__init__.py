@@ -4,7 +4,8 @@ from .advanced_queries import (
     get_units_in_apartment,
     query_date_range,
     compare_units,
-    analyze_trend
+    analyze_trend,
+    get_system_stats
 )
 
 __all__ = [
@@ -13,5 +14,6 @@ __all__ = [
     "get_units_in_apartment",
     "query_date_range",
     "compare_units",
-    "analyze_trend"
+    "analyze_trend",
+    "get_system_stats"
 ]

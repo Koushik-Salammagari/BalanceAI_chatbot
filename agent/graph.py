@@ -15,7 +15,9 @@ from tools import (
     get_units_in_apartment,
     query_date_range,
     compare_units,
-    analyze_trend
+    analyze_trend,
+    get_system_stats
+    
 )
 
 
@@ -113,6 +115,16 @@ def get_temperature_trends(unit_id: str, days: int = 7) -> dict:
     """
     return analyze_trend(unit_id, days)
 
+@tool
+def get_system_statistics() -> dict:
+    """
+    Get overall system statistics including total apartments, units, buildings.
+    Use this for queries like "how many apartments", "total units", "system overview".
+    
+    Returns:
+        System-wide statistics and counts
+    """
+    return get_system_stats()
 
 def create_agent():
     """
@@ -144,7 +156,8 @@ def create_agent():
         list_units_in_apartment,
         get_recent_data,
         compare_multiple_units,
-        get_temperature_trends
+        get_temperature_trends,
+        get_system_statistics
     ]
     
     # Create ReAct agent with all tools

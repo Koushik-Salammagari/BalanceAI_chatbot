@@ -328,3 +328,58 @@ def analyze_trend(unit_id: str, days: int = 7) -> Dict:
             }
         }
     }
+@handle_tool_error("Get System Statistics")
+def get_system_stats() -> Dict:
+    """
+    Get overall system statistics - total apartments, units, etc.
+    
+    Returns:
+        Dict with system-wide statistics
+    """
+    if not Path(DYNAMODB_MOCK_PATH).exists():
+        raise FileNotFoundError(f"Mock data file not found: {DYNAMODB_MOCK_PATH}")
+    
+    with open(DYNAMODB_MOCK_PATH, 'r') as f:
+        data = json.load(f)
+    
+    units = data.get('units', [])
+    
+    if not units:
+        return {
+            "success": False,
+            "error": "No units found in system",
+            "error_type": "NO_DATA"
+        }
+    
+    # Get unique apartments
+    apartments = set(unit.get('apartment_number') for unit in units)
+    
+    # Get unique buildings
+    buildings = set(unit.get('building') for unit in units)
+    
+    # Count by apartment
+    units_per_apartment = {}
+    for unit in units:
+        apt_num = unit.get('apartment_number')
+        if apt_num not in units_per_apartment:
+            units_per_apartment[apt_num] = []
+        units_per_apartment[apt_num].append(unit.get('unit_number'))
+    
+    # Count by unit type
+    unit_types = {}
+    for unit in units:
+        unit_type = unit.get('unit_type')
+        unit_types[unit_type] = unit_types.get(unit_type, 0) + 1
+    
+    return {
+        "success": True,
+        "data": {
+            "total_units": len(units),
+            "total_apartments": len(apartments),
+            "total_buildings": len(buildings),
+            "apartments": sorted(list(apartments)),
+            "buildings": sorted(list(buildings)),
+            "units_per_apartment": {k: len(v) for k, v in units_per_apartment.items()},
+            "unit_types": unit_types
+        }
+    }
