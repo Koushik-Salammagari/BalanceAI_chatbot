@@ -1,0 +1,564 @@
+2025-12-07 10:43:07,456 - __main__ - INFO - Database initialized
+2025-12-07 10:43:07,624 - __main__ - ERROR - Failed to initialize agent: name 'Annotated' is not defined
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 48, in <module>
+    st.session_state.agent = create_agent()
+                             ^^^^^^^^^^^^^^
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/agent/graph.py", line 64, in create_agent
+    agent = create_react_agent(llm, tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/_api/deprecation.py", line 80, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 540, in create_react_agent
+    tool_node = ToolNode(tools)
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 199, in __init__
+    tool_ = create_tool(tool_)
+            ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 319, in tool
+    return _create_tool_factory(name_or_callable.__name__)(name_or_callable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 264, in _tool_factory
+    return StructuredTool.from_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/structured.py", line 188, in from_function
+    args_schema = create_schema_from_function(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/base.py", line 253, in create_schema_from_function
+    validated = validate_arguments(func, config=_SchemaConfig)  # type: ignore[operator]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 65, in validate_arguments
+    return validate(func)
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 52, in validate
+    vd = ValidatedFunction(_func, config)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 95, in __init__
+    type_hints = _typing_extra.get_type_hints(function, include_extras=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 2414, in get_type_hints
+    hints[name] = _eval_type(value, globalns, localns)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 395, in _eval_type
+    return t._evaluate(globalns, localns, recursive_guard)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 905, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'Annotated' is not defined
+2025-12-07 10:53:11,660 - __main__ - INFO - Database initialized
+2025-12-07 10:53:11,825 - __main__ - ERROR - Failed to initialize agent: name 'Annotated' is not defined
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 48, in <module>
+    st.session_state.agent = create_agent()
+                             ^^^^^^^^^^^^^^
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/agent/graph.py", line 64, in create_agent
+    agent = create_react_agent(llm, tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/_api/deprecation.py", line 80, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 540, in create_react_agent
+    tool_node = ToolNode(tools)
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 199, in __init__
+    tool_ = create_tool(tool_)
+            ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 319, in tool
+    return _create_tool_factory(name_or_callable.__name__)(name_or_callable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 264, in _tool_factory
+    return StructuredTool.from_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/structured.py", line 188, in from_function
+    args_schema = create_schema_from_function(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/base.py", line 253, in create_schema_from_function
+    validated = validate_arguments(func, config=_SchemaConfig)  # type: ignore[operator]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 65, in validate_arguments
+    return validate(func)
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 52, in validate
+    vd = ValidatedFunction(_func, config)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 95, in __init__
+    type_hints = _typing_extra.get_type_hints(function, include_extras=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 2414, in get_type_hints
+    hints[name] = _eval_type(value, globalns, localns)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 395, in _eval_type
+    return t._evaluate(globalns, localns, recursive_guard)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 905, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'Annotated' is not defined
+2025-12-07 10:58:56,586 - __main__ - INFO - Database initialized
+2025-12-07 10:58:56,757 - __main__ - ERROR - Failed to initialize agent: name 'Annotated' is not defined
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 48, in <module>
+    st.session_state.agent = create_agent()
+                             ^^^^^^^^^^^^^^
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/agent/graph.py", line 64, in create_agent
+    agent = create_react_agent(llm, tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/_api/deprecation.py", line 80, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 540, in create_react_agent
+    tool_node = ToolNode(tools)
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 199, in __init__
+    tool_ = create_tool(tool_)
+            ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 319, in tool
+    return _create_tool_factory(name_or_callable.__name__)(name_or_callable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 264, in _tool_factory
+    return StructuredTool.from_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/structured.py", line 188, in from_function
+    args_schema = create_schema_from_function(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/base.py", line 253, in create_schema_from_function
+    validated = validate_arguments(func, config=_SchemaConfig)  # type: ignore[operator]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 65, in validate_arguments
+    return validate(func)
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 52, in validate
+    vd = ValidatedFunction(_func, config)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 95, in __init__
+    type_hints = _typing_extra.get_type_hints(function, include_extras=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 2414, in get_type_hints
+    hints[name] = _eval_type(value, globalns, localns)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 395, in _eval_type
+    return t._evaluate(globalns, localns, recursive_guard)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 905, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'Annotated' is not defined
+2025-12-07 11:01:29,360 - __main__ - INFO - Database initialized
+2025-12-07 11:01:29,530 - __main__ - ERROR - Failed to initialize agent: name 'Annotated' is not defined
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 48, in <module>
+    st.session_state.agent = create_agent()
+                             ^^^^^^^^^^^^^^
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/agent/graph.py", line 64, in create_agent
+    agent = create_react_agent(llm, tools)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/_api/deprecation.py", line 80, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 540, in create_react_agent
+    tool_node = ToolNode(tools)
+                ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 199, in __init__
+    tool_ = create_tool(tool_)
+            ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 319, in tool
+    return _create_tool_factory(name_or_callable.__name__)(name_or_callable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/convert.py", line 264, in _tool_factory
+    return StructuredTool.from_function(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/structured.py", line 188, in from_function
+    args_schema = create_schema_from_function(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/tools/base.py", line 253, in create_schema_from_function
+    validated = validate_arguments(func, config=_SchemaConfig)  # type: ignore[operator]
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 65, in validate_arguments
+    return validate(func)
+           ^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 52, in validate
+    vd = ValidatedFunction(_func, config)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/pydantic/deprecated/decorator.py", line 95, in __init__
+    type_hints = _typing_extra.get_type_hints(function, include_extras=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 2414, in get_type_hints
+    hints[name] = _eval_type(value, globalns, localns)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 395, in _eval_type
+    return t._evaluate(globalns, localns, recursive_guard)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.11/Frameworks/Python.framework/Versions/3.11/lib/python3.11/typing.py", line 905, in _evaluate
+    eval(self.__forward_code__, globalns, localns),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <module>
+NameError: name 'Annotated' is not defined
+2025-12-07 11:03:42,249 - __main__ - INFO - Database initialized
+2025-12-07 11:03:42,423 - __main__ - INFO - Agent initialized successfully
+2025-12-07 11:05:07,342 - __main__ - INFO - Created new conversation f8affd76-f320-48d3-9d2d-e854d0de095d
+2025-12-07 11:05:07,344 - __main__ - INFO - User query: Tell me about unit118
+2025-12-07 11:05:09,194 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:05:09,215 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 11:05:10,418 - tools.units_tool - INFO - Successfully retrieved metadata for unit118
+2025-12-07 11:05:13,591 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:05:13,596 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:06:07,936 - __main__ - INFO - User query: Show me all units in Market Lofts
+2025-12-07 11:06:08,683 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:06:08,687 - tools.units_tool - INFO - Listing units with filters: property=Market Lofts, floor=None, name=None
+2025-12-07 11:06:09,857 - tools.units_tool - INFO - Successfully retrieved 3 units
+2025-12-07 11:06:12,269 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:06:12,273 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:06:27,194 - __main__ - INFO - User query: What's the current temperature in unit118?
+2025-12-07 11:06:28,342 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:06:28,344 - tools.sensor_tool - INFO - Getting last 1 days of data for unit118
+2025-12-07 11:06:28,344 - tools.sensor_tool - INFO - Getting sensor data for unit118, type=temperature
+2025-12-07 11:06:30,562 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit118
+2025-12-07 11:06:32,748 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:06:32,754 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:06:54,285 - __main__ - INFO - User query: Is the temperature in unit118 increasing or decreasing over the last week?
+2025-12-07 11:06:56,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:06:56,306 - tools.analytics_tool - INFO - Analyzing trends for unit118, metric=temperature, days=7
+2025-12-07 11:06:58,655 - tools.analytics_tool - INFO - Successfully analyzed trends for unit118
+2025-12-07 11:07:00,192 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:07:00,198 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:08:10,763 - __main__ - INFO - User query: Compare the temperature between unit118 and unit111
+2025-12-07 11:08:11,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:08:11,554 - tools.analytics_tool - INFO - Comparing 2 units for last 7 days
+2025-12-07 11:08:11,555 - tools.analytics_tool - INFO - Comparing units: ['unit118', 'unit111']
+2025-12-07 11:08:15,247 - tools.analytics_tool - INFO - Successfully compared 2 units
+2025-12-07 11:08:17,760 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:08:17,773 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:08:34,614 - __main__ - INFO - User query: What was the temperature in unit118 yesterday from 2pm to 5pm?
+2025-12-07 11:08:35,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:08:35,534 - tools.sensor_tool - INFO - Getting sensor data for unit118, type=temperature
+2025-12-07 11:08:37,116 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit118
+2025-12-07 11:08:38,289 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:08:38,294 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:08:54,398 - __main__ - INFO - User query: Which unit is warmer - unit118, unit111, or unit115?
+2025-12-07 11:08:55,701 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:08:55,706 - tools.sensor_tool - INFO - Getting last 7 days of data for unit115
+2025-12-07 11:08:55,706 - tools.sensor_tool - INFO - Getting last 7 days of data for unit118
+2025-12-07 11:08:55,707 - tools.sensor_tool - INFO - Getting sensor data for unit115, type=temperature
+2025-12-07 11:08:55,708 - tools.sensor_tool - INFO - Getting last 7 days of data for unit111
+2025-12-07 11:08:55,709 - tools.sensor_tool - INFO - Getting sensor data for unit118, type=temperature
+2025-12-07 11:08:55,710 - tools.sensor_tool - INFO - Getting sensor data for unit111, type=temperature
+2025-12-07 11:08:57,440 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit115
+2025-12-07 11:08:58,319 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit111
+2025-12-07 11:08:58,391 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit118
+2025-12-07 11:08:58,769 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:08:58,772 - openai._base_client - INFO - Retrying request to /chat/completions in 0.433049 seconds
+2025-12-07 11:08:59,523 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:08:59,525 - openai._base_client - INFO - Retrying request to /chat/completions in 0.876686 seconds
+2025-12-07 11:09:00,817 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:09:00,820 - __main__ - ERROR - Unexpected error: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-4l3D968Iq0Ej9mmpSpRIedvU on tokens per min (TPM): Limit 30000, Requested 132005. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 209, in <module>
+    response = st.session_state.agent.invoke({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 1936, in invoke
+    for chunk in self.stream(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 1656, in stream
+    for _ in runner.tick(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/runner.py", line 167, in tick
+    run_with_retry(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 408, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 176, in invoke
+    ret = context.run(self.func, input, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 558, in call_model
+    response = model_runnable.invoke(state, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3047, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5430, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 372, in invoke
+    self.generate_prompt(
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 957, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 776, in generate
+    self._generate_with_cache(
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1022, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 717, in _generate
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-4l3D968Iq0Ej9mmpSpRIedvU on tokens per min (TPM): Limit 30000, Requested 132005. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+During task with name 'agent' and id '7909f672-8bfd-0719-11fd-7dd3f1008fd2'
+2025-12-07 11:09:18,292 - __main__ - INFO - User query: Which unit is warmer - unit118, unit111, or unit115?
+2025-12-07 11:09:19,454 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:09:19,456 - tools.sensor_tool - INFO - Getting last 7 days of data for unit115
+2025-12-07 11:09:19,456 - tools.sensor_tool - INFO - Getting last 7 days of data for unit118
+2025-12-07 11:09:19,457 - tools.sensor_tool - INFO - Getting last 7 days of data for unit111
+2025-12-07 11:09:19,457 - tools.sensor_tool - INFO - Getting sensor data for unit115, type=temperature
+2025-12-07 11:09:19,457 - tools.sensor_tool - INFO - Getting sensor data for unit118, type=temperature
+2025-12-07 11:09:19,458 - tools.sensor_tool - INFO - Getting sensor data for unit111, type=temperature
+2025-12-07 11:09:19,842 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit115
+2025-12-07 11:09:20,713 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit111
+2025-12-07 11:09:21,340 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit118
+2025-12-07 11:09:21,810 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:09:21,814 - openai._base_client - INFO - Retrying request to /chat/completions in 0.383854 seconds
+2025-12-07 11:09:22,527 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:09:22,528 - openai._base_client - INFO - Retrying request to /chat/completions in 0.779618 seconds
+2025-12-07 11:09:24,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-12-07 11:09:24,170 - __main__ - ERROR - Unexpected error: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-4l3D968Iq0Ej9mmpSpRIedvU on tokens per min (TPM): Limit 30000, Requested 132019. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/Users/koushikreddysalammagari/Desktop/projects/BalanceAI/streamlit_app.py", line 209, in <module>
+    response = st.session_state.agent.invoke({
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 1936, in invoke
+    for chunk in self.stream(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 1656, in stream
+    for _ in runner.tick(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/runner.py", line 167, in tick
+    run_with_retry(
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/pregel/retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 408, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 176, in invoke
+    ret = context.run(self.func, input, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langgraph/prebuilt/chat_agent_executor.py", line 558, in call_model
+    response = model_runnable.invoke(state, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 3047, in invoke
+    input_ = context.run(step.invoke, input_, config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/runnables/base.py", line 5430, in invoke
+    return self.bound.invoke(
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 372, in invoke
+    self.generate_prompt(
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 957, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 776, in generate
+    self._generate_with_cache(
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_core/language_models/chat_models.py", line 1022, in _generate_with_cache
+    result = self._generate(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/langchain_openai/chat_models/base.py", line 717, in _generate
+    response = self.client.create(**payload)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Request too large for gpt-4o in organization org-4l3D968Iq0Ej9mmpSpRIedvU on tokens per min (TPM): Limit 30000, Requested 132019. The input or output tokens must be reduced in order to run successfully. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+During task with name 'agent' and id 'a74618c6-2e8e-795f-17e7-5dddf22a1e01'
+2025-12-07 11:10:49,500 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 11:10:50,386 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:10:50,392 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 11:10:50,392 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 11:10:51,208 - tools.units_tool - INFO - Successfully retrieved 6 units
+2025-12-07 11:10:52,436 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:10:52,442 - __main__ - INFO - Agent response generated successfully
+2025-12-07 11:29:47,710 - __main__ - INFO - Saving conversation f8affd76-f320-48d3-9d2d-e854d0de095d
+2025-12-07 11:29:47,712 - __main__ - INFO - Started new conversation
+2025-12-07 11:29:50,134 - __main__ - INFO - Created new conversation a71eb6f6-75b1-4aba-ad6c-d94e3f9d88fc
+2025-12-07 11:29:50,135 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 11:29:51,334 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:29:51,339 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 11:29:51,340 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 11:29:53,364 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:29:53,380 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 11:29:55,532 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 11:29:55,537 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:06:27,029 - __main__ - INFO - Database initialized
+2025-12-07 18:06:27,205 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:06:31,247 - __main__ - INFO - Loaded conversation a71eb6f6-75b1-4aba-ad6c-d94e3f9d88fc
+2025-12-07 18:06:36,276 - __main__ - INFO - Saving conversation a71eb6f6-75b1-4aba-ad6c-d94e3f9d88fc
+2025-12-07 18:06:36,278 - __main__ - INFO - Started new conversation
+2025-12-07 18:06:38,958 - __main__ - INFO - Created new conversation a6655fd4-6cf5-4821-9951-699677d3015a
+2025-12-07 18:06:38,959 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 18:06:40,255 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:06:40,265 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:06:40,265 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:06:42,098 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:06:42,102 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:06:44,311 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:06:44,320 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:07:00,002 - __main__ - INFO - Loaded conversation a71eb6f6-75b1-4aba-ad6c-d94e3f9d88fc
+2025-12-07 18:07:01,200 - __main__ - INFO - Loaded conversation a71eb6f6-75b1-4aba-ad6c-d94e3f9d88fc
+2025-12-07 18:07:02,069 - __main__ - INFO - Loaded conversation f8affd76-f320-48d3-9d2d-e854d0de095d
+2025-12-07 18:07:07,304 - __main__ - INFO - Saving conversation f8affd76-f320-48d3-9d2d-e854d0de095d
+2025-12-07 18:07:07,304 - __main__ - INFO - Started new conversation
+2025-12-07 18:07:10,178 - __main__ - INFO - Created new conversation 960091c6-3324-4765-be13-9615a4b23dc8
+2025-12-07 18:07:10,180 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 18:07:11,790 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:07:11,795 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:07:11,796 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:07:13,169 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:07:13,176 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:07:14,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:07:14,627 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:07:58,028 - __main__ - INFO - Database initialized
+2025-12-07 18:07:58,053 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:08:00,927 - __main__ - INFO - Created new conversation 0026a667-d357-42a6-a11a-b92842ef6b6b
+2025-12-07 18:08:00,929 - __main__ - INFO - User query: Tell me about unit118
+2025-12-07 18:08:02,273 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:08:02,278 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:08:03,399 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:08:03,404 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:22:45,054 - __main__ - INFO - Database initialized
+2025-12-07 18:22:45,235 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:22:51,959 - __main__ - INFO - Loaded conversation 0026a667-d357-42a6-a11a-b92842ef6b6b
+2025-12-07 18:22:55,933 - __main__ - INFO - Saving conversation 0026a667-d357-42a6-a11a-b92842ef6b6b
+2025-12-07 18:22:55,934 - __main__ - INFO - Started new conversation
+2025-12-07 18:22:58,755 - __main__ - INFO - Created new conversation d91a8576-fc35-47e9-86e2-23bd8b6b3b9d
+2025-12-07 18:22:58,758 - __main__ - INFO - User query: Tell me about unit118
+2025-12-07 18:22:59,644 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:22:59,662 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:23:00,976 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:23:00,980 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:23:14,535 - __main__ - INFO - Loaded conversation 22a3d97f-07fe-4ae8-89f6-85209c07472f
+2025-12-07 18:23:18,820 - __main__ - INFO - Loaded conversation 960091c6-3324-4765-be13-9615a4b23dc8
+2025-12-07 18:23:21,744 - __main__ - INFO - Loaded conversation a6655fd4-6cf5-4821-9951-699677d3015a
+2025-12-07 18:23:24,436 - __main__ - INFO - Loaded conversation 960091c6-3324-4765-be13-9615a4b23dc8
+2025-12-07 18:23:28,522 - __main__ - INFO - Saving conversation 960091c6-3324-4765-be13-9615a4b23dc8
+2025-12-07 18:23:28,523 - __main__ - INFO - Started new conversation
+2025-12-07 18:23:31,399 - __main__ - INFO - Created new conversation 27b200a1-8fe0-49d8-92a1-85d3b5b0049a
+2025-12-07 18:23:31,401 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 18:23:32,362 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:23:32,367 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:23:32,368 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:23:34,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:23:34,052 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:23:35,348 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:23:35,360 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:27:40,128 - __main__ - INFO - Database initialized
+2025-12-07 18:27:40,312 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:27:42,257 - __main__ - INFO - Loaded conversation 27b200a1-8fe0-49d8-92a1-85d3b5b0049a
+2025-12-07 18:27:47,217 - __main__ - INFO - Saving conversation 27b200a1-8fe0-49d8-92a1-85d3b5b0049a
+2025-12-07 18:27:47,217 - __main__ - INFO - Started new conversation
+2025-12-07 18:27:49,517 - __main__ - INFO - Created new conversation 60eda878-dc07-4d54-bf52-935d89595a28
+2025-12-07 18:27:49,519 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 18:27:50,331 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:27:50,341 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:27:50,341 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:27:51,789 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:27:51,796 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:27:53,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:27:53,206 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:29:52,729 - __main__ - INFO - Database initialized
+2025-12-07 18:29:52,908 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:29:54,472 - __main__ - INFO - Loaded conversation 60eda878-dc07-4d54-bf52-935d89595a28
+2025-12-07 18:29:59,145 - __main__ - INFO - User query: How many total units do we have? What properties are they in?
+2025-12-07 18:29:59,792 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:29:59,809 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:29:59,810 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:30:00,918 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:30:00,923 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:30:09,844 - __main__ - INFO - Loaded conversation 27b200a1-8fe0-49d8-92a1-85d3b5b0049a
+2025-12-07 18:30:10,693 - __main__ - INFO - Loaded conversation d91a8576-fc35-47e9-86e2-23bd8b6b3b9d
+2025-12-07 18:30:14,507 - __main__ - INFO - User query: Tell me about unit118
+2025-12-07 18:30:15,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:30:15,054 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:30:15,054 - tools.units_tool - INFO - API Key is None or empty!
+2025-12-07 18:30:16,175 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:30:16,180 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:35:36,281 - __main__ - INFO - Database initialized
+2025-12-07 18:35:36,457 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:35:39,743 - __main__ - INFO - Loaded conversation d91a8576-fc35-47e9-86e2-23bd8b6b3b9d
+2025-12-07 18:35:45,016 - __main__ - INFO - User query: Tell me about unit118
+2025-12-07 18:35:45,701 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:35:45,719 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:35:45,720 - tools.units_tool - INFO - API Key (first 10 chars): PTln6iCc9K...
+2025-12-07 18:35:46,723 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:35:46,726 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:36:54,732 - __main__ - INFO - Saving conversation d91a8576-fc35-47e9-86e2-23bd8b6b3b9d
+2025-12-07 18:36:54,733 - __main__ - INFO - Started new conversation
+2025-12-07 18:36:57,341 - __main__ - INFO - Created new conversation 754d78d5-48ec-4aef-b282-74c9ba02573e
+2025-12-07 18:36:57,343 - __main__ - INFO - User query: Should show unit118 details with sensors!
+2025-12-07 18:36:58,099 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:36:58,105 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:36:58,106 - tools.units_tool - INFO - API Key (first 10 chars): PTln6iCc9K...
+2025-12-07 18:36:59,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:36:59,817 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:44:32,154 - __main__ - INFO - Database initialized
+2025-12-07 18:44:32,329 - __main__ - INFO - Agent initialized successfully
+2025-12-07 18:44:33,923 - __main__ - INFO - Loaded conversation 754d78d5-48ec-4aef-b282-74c9ba02573e
+2025-12-07 18:44:37,340 - __main__ - INFO - Saving conversation 754d78d5-48ec-4aef-b282-74c9ba02573e
+2025-12-07 18:44:37,341 - __main__ - INFO - Started new conversation
+2025-12-07 18:44:39,886 - __main__ - INFO - Created new conversation de6a9cd1-4d78-4c78-99a4-c403adde95b0
+2025-12-07 18:44:39,889 - __main__ - INFO - User query: Should show unit118 details with sensors!
+2025-12-07 18:44:40,956 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:44:40,974 - tools.units_tool - INFO - Getting metadata for unit: unit118
+2025-12-07 18:44:40,974 - tools.units_tool - INFO - API Key (first 10 chars): PTln6iCc9K...
+2025-12-07 18:44:42,067 - tools.units_tool - INFO - Successfully retrieved metadata for unit118
+2025-12-07 18:44:43,733 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:44:43,742 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:45:33,166 - __main__ - INFO - User query: Is the temperature in unit118 increasing or decreasing over the last week?
+2025-12-07 18:45:33,785 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:45:33,792 - tools.analytics_tool - INFO - Analyzing trends for unit118, metric=temperature, days=7
+2025-12-07 18:45:37,167 - tools.analytics_tool - INFO - Successfully analyzed trends for unit118
+2025-12-07 18:45:39,418 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:45:39,422 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:46:05,251 - __main__ - INFO - User query: How many units are in Market Lofts?
+2025-12-07 18:46:05,847 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:05,855 - tools.units_tool - INFO - Listing units with filters: property=Market Lofts, floor=None, name=None
+2025-12-07 18:46:07,271 - tools.units_tool - INFO - Successfully retrieved 3 units
+2025-12-07 18:46:07,923 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:07,932 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:46:27,281 - __main__ - INFO - User query: How many total units and sensors do we have?
+2025-12-07 18:46:27,851 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:27,855 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 18:46:27,855 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 18:46:28,308 - tools.units_tool - INFO - Successfully retrieved 6 units
+2025-12-07 18:46:28,877 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:28,881 - __main__ - INFO - Agent response generated successfully
+2025-12-07 18:46:45,628 - __main__ - INFO - User query: What was the temperature in unit118 yesterday?
+2025-12-07 18:46:47,192 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:47,197 - tools.sensor_tool - INFO - Getting last 1 days of data for unit118
+2025-12-07 18:46:47,198 - tools.sensor_tool - INFO - Getting sensor data for unit118, type=temperature
+2025-12-07 18:46:50,031 - tools.sensor_tool - INFO - Successfully retrieved sensor data for unit118
+2025-12-07 18:46:51,487 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 18:46:51,496 - __main__ - INFO - Agent response generated successfully
+2025-12-07 19:47:47,575 - __main__ - INFO - Database initialized
+2025-12-07 19:47:47,790 - __main__ - INFO - Agent initialized successfully
+2025-12-07 19:47:59,491 - __main__ - INFO - Loaded conversation de6a9cd1-4d78-4c78-99a4-c403adde95b0
+2025-12-07 19:48:08,388 - __main__ - INFO - Saving conversation de6a9cd1-4d78-4c78-99a4-c403adde95b0
+2025-12-07 19:48:08,390 - __main__ - INFO - Started new conversation
+2025-12-07 19:48:11,098 - __main__ - INFO - Created new conversation c2d5a5e2-9e9e-4632-a029-32fcd337a426
+2025-12-07 19:48:11,098 - __main__ - INFO - User query: How many total units and sensors do we have?
+2025-12-07 19:48:12,143 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 19:48:12,159 - tools.analytics_tool - INFO - Getting system statistics
+2025-12-07 19:48:12,160 - tools.units_tool - INFO - Listing units with filters: property=None, floor=None, name=None
+2025-12-07 19:48:13,472 - tools.units_tool - INFO - Successfully retrieved 6 units
+2025-12-07 19:48:14,491 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-07 19:48:14,493 - __main__ - INFO - Agent response generated successfully

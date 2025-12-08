@@ -4,3 +4,4 @@ langchain-openai==0.2.14
 langgraph==0.2.60
 python-dotenv==1.0.0
 streamlit==1.40.2
+requests
